@@ -103,4 +103,18 @@ void searchdata() {
 		system("cls");
 		return;
 	}
+	else {
+		int nim;
+		cout << "Masukkan NIM: ";
+		cin >> nim;
+		node* currentNode = start;
+		while (currentNode->noMhs == nim) {
+			if (currentNode->noMhs == nim) {
+				cout << "NIM: " << currentNode->noMhs << ", NAMA: " << currentNode->name << endl;
+				return;
+			}
+			currentNode = currentNode->next;
+		}
+		cout << "Data Tidak Ditemukan" << endl;
+	}
 }
