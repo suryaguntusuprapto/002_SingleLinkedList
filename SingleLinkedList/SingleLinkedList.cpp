@@ -95,3 +95,12 @@ void traverse() {
 		}
 	}
 }
+
+void searchdata() {
+	if (listempty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+}
