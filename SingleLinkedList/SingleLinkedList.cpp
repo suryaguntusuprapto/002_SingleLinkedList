@@ -65,4 +65,10 @@ bool searchNode(int nim, node* current, node* previous) {
 bool deletenode(int nim) {
 	node* current = start;
 	node* previous = start;
+	if (searchNode(nim, previous, current) == false)
+		return false;
+	previous->next = current->next;
+	if (current == start)
+		start = current->next;
+	return true;
 }
