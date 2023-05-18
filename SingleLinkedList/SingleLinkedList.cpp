@@ -29,3 +29,5 @@ void addNode() {
 		start = nodeBaru;
 	}
 }
+
+node* previous = start;
