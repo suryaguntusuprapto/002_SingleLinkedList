@@ -79,3 +79,12 @@ bool listempty() {
 	else
 		return false;
 }
+
+void traverse() {
+	if (listempty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+}
