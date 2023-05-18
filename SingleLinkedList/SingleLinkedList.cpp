@@ -72,3 +72,10 @@ bool deletenode(int nim) {
 		start = current->next;
 	return true;
 }
+
+bool listempty() {
+	if (start == NULL)
+		return true;
+	else
+		return false;
+}
